@@ -1,18 +1,19 @@
 // Послуги та ціни — з віджета Appointer (id = productId)
 const SERVICES = [
+    // Перші три — за вибором власника, далі за спаданням ціни
     { id: '132449', title: 'Стрижка (машинка + ножиці)', priceMin: 400, priceMax: 600, duration_min: 60 },
-    { id: '492706', title: 'Стрижка (військовий)', priceMin: 400, priceMax: 500, duration_min: 60 },
-    { id: '491918', title: 'Подовжена стрижка (тільки ножиці)', priceMin: 600, priceMax: 700, duration_min: 60 },
-    { id: '132454', title: 'Дитяча стрижка (4–11 р.)', priceMin: 350, priceMax: 550, duration_min: 60 },
     { id: '132450', title: 'Стрижка + борода', priceMin: 800, priceMax: 900, duration_min: 90 },
-    { id: '492707', title: 'Стрижка + борода (військовий)', priceMin: 700, priceMax: 750, duration_min: 90 },
-    { id: '132451', title: 'Батько і син (4–11 р.)', priceMin: 850, priceMax: 1050, duration_min: 120 },
-    { id: '132455', title: 'Корекція бороди', priceMin: 400, priceMax: 500, duration_min: 60 },
-    { id: '132452', title: 'Камуфляж (голова / борода)', priceMin: 500, priceMax: 500, duration_min: 30 },
-    { id: '132457', title: 'Укладання волосся', priceMin: 200, priceMax: 200, duration_min: 30 },
-    { id: '509211', title: 'Віск', priceMin: 80, priceMax: 80, duration_min: 30 },
+    { id: '491918', title: 'Подовжена стрижка (тільки ножиці)', priceMin: 600, priceMax: 700, duration_min: 60 },
+    { id: '493260', title: 'Бразильське фарбування (+ стрижка)', priceMin: 2500, priceMax: 2500, duration_min: 120 },
     { id: '491962', title: 'Бразильське фарбування (без стрижки)', priceMin: 2000, priceMax: 2000, duration_min: 120 },
-    { id: '493260', title: 'Бразильське фарбування (+ стрижка)', priceMin: 2500, priceMax: 2500, duration_min: 120 }
+    { id: '132451', title: 'Батько і син (4–11 р.)', priceMin: 850, priceMax: 1050, duration_min: 120 },
+    { id: '492707', title: 'Стрижка + борода (військовий)', priceMin: 700, priceMax: 750, duration_min: 90 },
+    { id: '132454', title: 'Дитяча стрижка (4–11 р.)', priceMin: 350, priceMax: 550, duration_min: 60 },
+    { id: '132452', title: 'Камуфляж (голова / борода)', priceMin: 500, priceMax: 500, duration_min: 30 },
+    { id: '132455', title: 'Корекція бороди', priceMin: 400, priceMax: 500, duration_min: 60 },
+    { id: '492706', title: 'Стрижка (військовий)', priceMin: 400, priceMax: 500, duration_min: 60 },
+    { id: '132457', title: 'Укладання волосся', priceMin: 200, priceMax: 200, duration_min: 30 },
+    { id: '509211', title: 'Віск', priceMin: 80, priceMax: 80, duration_min: 30 }
 ];
 
 // Барбери — з віджета Appointer (id = companyUserId)
@@ -28,7 +29,7 @@ const BARBERS = [
 
 // Віджет онлайн-запису закладу (Appointer)
 const BOOKING_URL = 'https://widget.client.appointer.ua/uk/skazheni-vusa';
-const SERVICES_VISIBLE = 8;
+const SERVICES_VISIBLE = 3;
 
 document.addEventListener('DOMContentLoaded', () => {
     // 1. Мобильное меню (гамбургер)
