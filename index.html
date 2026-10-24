@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Скажені Вуса — Барбершоп у Стрию | Преміум догляд</title>
+    <meta name="description" content="Сучасний барбершоп «Скажені Вуса» у Стрию. Чоловічі стрижки, оформлення бороди, преміальний сервіс. Записуйтесь онлайн!">
+    <meta name="theme-color" content="#0a0a0a">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Скажені Вуса — барбершоп у Стрию">
+    <meta property="og:description" content="Чоловічі стрижки, оформлення бороди та королівське гоління. Онлайн-запис за 1 хвилину.">
+    <link rel="icon" type="image/svg+xml" href="images/logo.svg">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- SVG-іконки (використовуються через <use>) -->
+    <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+        <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="9.5" r="2.5" fill="none" stroke="currentColor" stroke-width="1.6"/></symbol>
+        <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M5 4h3.5l1.6 4.2-2.2 1.4a11 11 0 0 0 6.5 6.5l1.4-2.2L20 15.5V19a1.5 1.5 0 0 1-1.6 1.5C10.6 20 4 13.4 3.5 5.6A1.5 1.5 0 0 1 5 4z" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></symbol>
+        <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M12 7.5V12l3 2" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+        <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.2" cy="6.8" r="1.1" fill="currentColor"/></symbol>
+        <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M7 17L17 7M9 7h8v8" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+        <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    </svg>
+
+    <!-- Навігація -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="Скажені Вуса — на початок сторінки">
+                <img src="images/logo.svg" alt="" class="logo-mark" width="48" height="48">
+                <span class="logo-text">
+                    <span class="logo-name"><span class="logo-accent">СКАЖЕНІ</span> ВУСА</span>
+                    <span class="logo-sub">Barbershop · Стрий</span>
+                </span>
+            </a>
+
+            <nav class="main-nav" id="mainNav" aria-label="Головна навігація">
+                <ul class="nav-list">
+                    <li><a href="#services" class="nav-link">Послуги</a></li>
+                    <li><a href="#gallery" class="nav-link">Галерея</a></li>
+                    <li><a href="#about" class="nav-link">Про нас</a></li>
+                    <li><a href="#team" class="nav-link">Барбери</a></li>
+                    <li><a href="#contacts" class="nav-link">Контакти</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <button type="button" class="btn btn-primary btn-sm" data-open-booking>Записатися</button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Відкрити меню" aria-expanded="false">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero-блок -->
+        <section class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <p class="hero-subtitle">Барбершоп у Стрию</p>
+                    <h1 class="hero-title">Твій стиль.<br>Твій характер.<br><em>Твій барбер.</em></h1>
+                    <p class="hero-desc">Преміальний догляд, бездоганні стрижки та класичне гоління в атмосфері чоловічого простору.</p>
+                    <div class="hero-buttons">
+                        <button type="button" class="btn btn-primary btn-lg" data-open-booking>Онлайн-запис</button>
+                        <a href="#services" class="btn btn-text">Переглянути послуги &darr;</a>
+                    </div>
+                    <ul class="hero-facts">
+                        <li><strong>Пн–Сб</strong> 09:00–20:00</li>
+                        <li><strong>Нд</strong> 11:00–18:00</li>
+                    </ul>
+                </div>
+                <figure class="hero-media">
+                    <img src="images/interior.jpg" alt="Інтер'єр барбершопу «Скажені Вуса»: крісло барбера перед дзеркалом з підсвіткою" width="1080" height="1440" fetchpriority="high">
+                    <figcaption>
+                        <a href="https://maps.google.com/?q=вул.+Тараса+Шевченка,+111Б,+Стрий" target="_blank" rel="noopener noreferrer">
+                            <svg class="icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+                            вул. Тараса Шевченка, 111Б
+                        </a>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <!-- Блок послуг -->
+        <section id="services" class="section services-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Прайс-лист</span>
+                    <h2 class="section-title">Послуги та ціни</h2>
+                    <p class="section-desc">Оберіть потрібну послугу для швидкого онлайн-запису.</p>
+                </div>
+
+                <!-- Контейнер заповнюється з script.js (дані з Appointer) -->
+                <div class="services-grid" id="servicesGrid"></div>
+
+                <div class="services-cta">
+                    <button type="button" class="btn btn-primary" data-open-booking>Записатися онлайн</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Галерея (з можливістю збільшення фото) -->
+        <section id="gallery" class="section gallery-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Атмосфера та роботи</span>
+                    <h2 class="section-title">Галерея</h2>
+                    <p class="section-desc">Натисніть на фотографію, щоб переглянути її у повному розмірі.</p>
+                </div>
+
+                <div class="gallery-grid" id="galleryGrid">
+                    <button type="button" class="gallery-item gallery-item--feature" data-full-img="images/work-1.jpg" aria-label="Збільшити фото: Кроп з фейдом та бородою">
+                        <img src="images/work-1.jpg" alt="Короткий кроп з фейдом та оформленою бородою" loading="lazy">
+                        <span class="gallery-zoom-hint">Збільшити</span>
+                    </button>
+                    <button type="button" class="gallery-item" data-full-img="images/work-2.jpg" aria-label="Збільшити фото: Кроп з фейдом">
+                        <img src="images/work-2.jpg" alt="Короткий текстурований кроп з фейдом та бородою" loading="lazy">
+                        <span class="gallery-zoom-hint">Збільшити</span>
+                    </button>
+                    <button type="button" class="gallery-item" data-full-img="images/work-3.jpg" aria-label="Збільшити фото: Помпадур з об'ємом">
+                        <img src="images/work-3.jpg" alt="Класичний помпадур з об'ємом та укладкою назад" loading="lazy">
+                        <span class="gallery-zoom-hint">Збільшити</span>
+                    </button>
+                    <button type="button" class="gallery-item" data-full-img="images/work-4.jpg" aria-label="Збільшити фото: Текстурна стрижка">
+                        <img src="images/work-4.jpg" alt="Текстурна стрижка з чубчиком на хвилястому волоссі" loading="lazy">
+                        <span class="gallery-zoom-hint">Збільшити</span>
+                    </button>
+                    <button type="button" class="gallery-item" data-full-img="images/work-5.jpg" aria-label="Збільшити фото: Квіф з бородою">
+                        <img src="images/work-5.jpg" alt="Квіф з укладкою та оформленою бородою" loading="lazy">
+                        <span class="gallery-zoom-hint">Збільшити</span>
+                    </button>
+                </div>
+
+                <div class="gallery-cta">
+                    <a href="https://www.instagram.com/skazheni_vusa_stryi/" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+                        <svg class="icon" aria-hidden="true"><use href="#icon-instagram"/></svg>
+                        Більше робіт в Instagram
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Про нас -->
+        <section id="about" class="section about-section">
+            <div class="container about-container">
+                <div class="about-content">
+                    <span class="section-tag">Простір та якість</span>
+                    <h2 class="section-title">Більше ніж просто стрижка</h2>
+                    <p class="about-text">«Скажені Вуса» у Стрию — це територія чоловічого стилю, де поєднуються класичні традиції барберінгу та сучасний сервіс.</p>
+                    <p class="about-text">Ми пропонуємо бездоганну якість, професійну косметику та атмосферу, де кожен гість почувається впевнено.</p>
+
+                    <div class="about-features">
+                        <div class="feature-item">
+                            <span class="feature-num">01</span>
+                            <h4>Майстри своєї справи</h4>
+                            <p>Досвід та увага до кожної деталі вашого образу.</p>
+                        </div>
+                        <div class="feature-item">
+                            <span class="feature-num">02</span>
+                            <h4>Преміум косметика</h4>
+                            <p>Виключно перевірені бренди для догляду.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/cosmetics.jpg" alt="Матові помади Uppercut Deluxe, якими працюють у «Скажених Вусах»" loading="lazy" width="960" height="1280">
+                </div>
+            </div>
+        </section>
+
+        <!-- Команда -->
+        <section id="team" class="section team-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Професіонали</span>
+                    <h2 class="section-title">Наша команда</h2>
+                    <p class="section-desc">Майстри, які створюють ваш стиль. Ви можете записатися до конкретного барбера.</p>
+                </div>
+
+                <!-- Контейнер заповнюється з script.js (дані з Appointer) -->
+                <div class="team-grid" id="teamGrid"></div>
+            </div>
+        </section>
+
+        <!-- Контакти -->
+        <section id="contacts" class="section contacts-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Чекаємо на вас</span>
+                    <h2 class="section-title">Контакти</h2>
+                </div>
+
+                <ul class="contacts-grid">
+                    <li>
+                        <a href="https://maps.google.com/?q=вул.+Тараса+Шевченка,+111Б,+Стрий" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--link">
+                            <svg class="contact-icon" aria-hidden="true"><use href="#icon-pin"/></svg>
+                            <span class="contact-label">Адреса</span>
+                            <span class="contact-value">вул. Тараса Шевченка, 111Б<br>Стрий, Львівська обл.</span>
+                            <span class="contact-more">Відкрити на карті <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="tel:+380992154808" class="contact-card contact-card--link">
+                            <svg class="contact-icon" aria-hidden="true"><use href="#icon-phone"/></svg>
+                            <span class="contact-label">Телефон</span>
+                            <span class="contact-value">+380 99 215 4808</span>
+                            <span class="contact-more">Зателефонувати <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+                        </a>
+                    </li>
+                    <li>
+                        <div class="contact-card">
+                            <svg class="contact-icon" aria-hidden="true"><use href="#icon-clock"/></svg>
+                            <span class="contact-label">Графік роботи</span>
+                            <span class="contact-value">Пн–Сб 09:00–20:00<br>Нд 11:00–18:00</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/skazheni_vusa_stryi/" target="_blank" rel="noopener noreferrer" class="contact-card contact-card--link">
+                            <svg class="contact-icon" aria-hidden="true"><use href="#icon-instagram"/></svg>
+                            <span class="contact-label">Instagram</span>
+                            <span class="contact-value">@skazheni_vusa_stryi</span>
+                            <span class="contact-more">Перейти <svg class="icon" aria-hidden="true"><use href="#icon-arrow"/></svg></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Фінальний CTA -->
+        <section class="section cta-section">
+            <div class="container cta-container text-center">
+                <img src="images/logo.svg" alt="" class="cta-mark" width="72" height="72">
+                <h2 class="cta-title">Готові оновити свій образ?</h2>
+                <p class="cta-desc">Оберіть майстра, послугу та зручний час прямо на сайті за 1 хвилину.</p>
+                <button type="button" class="btn btn-primary btn-lg" data-open-booking>Записатися на стрижку</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Футер -->
+    <footer class="site-footer">
+        <div class="container footer-container">
+            <div class="footer-col">
+                <a href="#" class="logo" aria-label="Скажені Вуса — на початок сторінки">
+                    <img src="images/logo.svg" alt="" class="logo-mark" width="48" height="48">
+                    <span class="logo-text">
+                        <span class="logo-name"><span class="logo-accent">СКАЖЕНІ</span> ВУСА</span>
+                        <span class="logo-sub">Barbershop · Стрий</span>
+                    </span>
+                </a>
+                <p class="footer-slogan">Преміальний барбершоп у Стрию.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Навігація</h4>
+                <ul class="footer-links">
+                    <li><a href="#services">Послуги та ціни</a></li>
+                    <li><a href="#gallery">Галерея</a></li>
+                    <li><a href="#team">Барбери</a></li>
+                    <li><a href="#contacts">Контакти</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Зв'язок</h4>
+                <p><a href="https://maps.google.com/?q=вул.+Тараса+Шевченка,+111Б,+Стрий" target="_blank" rel="noopener noreferrer" class="link">вул. Тараса Шевченка, 111Б</a></p>
+                <p><a href="tel:+380992154808" class="link">+380 99 215 4808</a></p>
+                <p><a href="https://www.instagram.com/skazheni_vusa_stryi/" target="_blank" rel="noopener noreferrer" class="link">Instagram</a></p>
+                <p><button type="button" class="link-btn" data-open-booking>Онлайн-запис на сайті</button></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Lightbox для збільшення фото галереї -->
+    <div class="lightbox" id="galleryLightbox" aria-hidden="true" role="dialog" aria-label="Перегляд фотографії">
+        <button type="button" class="lightbox-close" id="lightboxClose" aria-label="Закрити фото">&times;</button>
+        <button type="button" class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Попереднє фото">
+            <svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+        <img src="" alt="" class="lightbox-img" id="lightboxImg">
+        <button type="button" class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Наступне фото">
+            <svg class="icon" aria-hidden="true"><use href="#icon-chevron"/></svg>
+        </button>
+        <span class="lightbox-counter" id="lightboxCounter"></span>
+    </div>
+
+    <!-- Модальне вікно онлайн-запису (віджет Appointer) -->
+    <div class="booking-modal" id="bookingModal" aria-hidden="true" role="dialog" aria-modal="true" aria-label="Онлайн-запис">
+        <div class="booking-dialog">
+            <div class="booking-head">
+                <span class="booking-title">Онлайн-запис</span>
+                <button type="button" class="booking-close" id="bookingClose" aria-label="Закрити запис">&times;</button>
+            </div>
+            <div class="booking-body">
+                <div class="booking-loader" id="bookingLoader">
+                    <span class="booking-spinner" aria-hidden="true"></span>
+                    <span>Завантажуємо запис…</span>
+                </div>
+                <iframe class="booking-frame" id="bookingFrame" title="Онлайн-запис у «Скажені Вуса»" allow="payment"></iframe>
+            </div>
+            <p class="booking-foot" id="bookingFoot">Не відкривається? <a href="https://widget.client.appointer.ua/uk/skazheni-vusa" id="bookingExternal" target="_blank" rel="noopener noreferrer">Відкрити в новій вкладці</a></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
