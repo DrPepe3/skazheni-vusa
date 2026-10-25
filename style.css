@@ -27,6 +27,7 @@
 
 html {
     scroll-behavior: smooth;
+    overflow-x: clip;
 }
 
 body {
@@ -192,9 +193,18 @@ section[id] {
     width: 100%;
     z-index: 1000;
     background-color: rgba(10, 10, 10, 0.85);
-    backdrop-filter: blur(10px);
     border-bottom: 1px solid transparent;
     transition: var(--transition);
+}
+
+/* blur в псевдоэлементе: backdrop-filter на самой шапке делает её containing block для fixed-меню */
+.site-header::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .site-header.scrolled {
@@ -1135,19 +1145,23 @@ section[id] {
     .main-nav {
         position: fixed;
         top: 0;
-        right: -100%;
+        left: 0;
         width: 100%;
         height: 100vh;
+        height: 100dvh;
         background-color: var(--bg-deep);
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: var(--transition);
+        transform: translateX(100%);
+        visibility: hidden;
+        transition: transform 0.3s ease, visibility 0.3s;
         z-index: 999;
     }
 
     .main-nav.active {
-        right: 0;
+        transform: translateX(0);
+        visibility: visible;
     }
 
     .main-nav .nav-list {
